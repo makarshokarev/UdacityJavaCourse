@@ -1,8 +1,8 @@
-#Space Challenge
+# Space Challenge
 
 SpaceChallenge project for Udacity's Object Oriented Programming in Java course.
 
-##Rocket Specifications
+## Rocket Specifications
 U-1
 
 - Rocket cost = $100 Million *Rocket weight = 10 Tonnes
@@ -18,7 +18,7 @@ U-2
 - Chance of launch explosion = 4% * (cargo carried / cargo limit)
 - Chance of landing crash = 8% * (cargo carried / cargo limit)
 
-##PART 1: The design
+## PART 1: The design
 Create an Item class that includes a String name and an int weight that will represent an item to be carried by the rockets Create a SpaceShip Interface that includes the definitions of these methods:
 
 - launch: a method that returns either true or false indicating if the launch was successful or if the rocket has crashed.
@@ -30,7 +30,7 @@ launch and land methods in the Rocket class should always return true. When U1 a
 
 - Create classes U1 and U2 that extend the Rocket class and override the land and launch methods to calculate the corresponding chance of exploding and return either true or false based on a random number using the probability equation for each.
 
-##PART 2: The simulation
+## PART 2: The simulation
 Create a Simulation class that is responsible for reading item data and filling up the rockets. The Simulation class should include these methods:
 
 - loadItems: this method loads all items from a text file and returns an ArrayList of Items:
@@ -47,7 +47,7 @@ Create a Simulation class that is responsible for reading item data and filling 
 
 - runSimulation: this method takes an ArrayList of Rockets and calls launch and land methods for each of the rockets in the ArrayList. Every time a rocket explodes or crashes (i.e if launch or land return false) it will have to send that rocket again. All while keeping track of the total budget required to send each rocket safely to Mars. runSimulation then returns the total budget required to send all rockets (including the crashed ones).
 
-##PART 3: Running the Simulation
+## PART 3: Running the Simulation
 Create a Main class with the main method and start running the simulation:
 
 - Create a Simulation object
